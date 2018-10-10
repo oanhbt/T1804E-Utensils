@@ -1,784 +1,836 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html>
 <head>
-	<title>Goggles Ecommerce Category Bootstrap responsive Web Template | Checkout :: w3layouts</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<meta name="keywords" content="Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		.cart-page__content--opc {
+		    padding-top: 2rem;
 		}
-	</script>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/login_overlay.css" rel='stylesheet' type='text/css' />
-	<link href="css/style6.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="css/shop.css" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="css/checkout.css">
-	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
-	    rel="stylesheet">
+		._3NyFmC {
+		    background-color: #fffefb;
+		    border: 1px solid rgba(224,168,0,.4);
+		    padding: 1.2rem 1.6rem;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    margin-bottom: 1rem;
+		    border-radius: 2px;
+		}
+		svg:not(:root) {
+		    overflow: hidden;
+		}
+		.cart-fsv-banner__icon {
+		    width: unset;
+		}
+		.shopee-svg-icon {
+		    display: inline-block;
+		    width: 1em;
+		    height: 1em;
+		    fill: currentColor;
+		    position: relative;
+		}
+		.cart-fsv-banner__message {
+		    color: #222;
+		    margin-left: .8rem;
+		}
+		.cart-fsv-banner__link {
+		    color: #05a;
+		}
+		.cart-page-product-header, .cart-page-product-header__checkbox-wrapper {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		}
+		.cart-page-product-header {
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+		    border-radius: .2rem;
+		    overflow: hidden;
+		    border-radius: 3px;
+		    height: 5.5rem;
+		    font-size: 1.4rem;
+		    background: #fff;
+		    text-transform: capitalize;
+		    margin-bottom: 12px;
+		    color: #888;
+		    padding: 0 20px;
+		}
+		.cart-item__cell-checkbox {
+		    padding: 0 12px 0 20px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: reverse;
+		    -webkit-flex-direction: row-reverse;
+		    -moz-box-orient: horizontal;
+		    -moz-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		    min-width: 58px;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		.stardust-checkbox {
+		    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+		    font-weight: 300;
+		    font-size: 12px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    cursor: default;
+		    position: relative;
+		    color: rgba(0,0,0,.54);
+		    max-width: 400px;
+		}
+		.stardust-checkbox__input {
+		    opacity: 0;
+		    top: 0;
+		    left: 0;
+		    position: absolute;
+		}
+		.stardust-checkbox__box {
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    position: relative;
+		    width: 16px;
+		    height: 16px;
+		    -webkit-flex-shrink: 0;
+		    -ms-flex-negative: 0;
+		    flex-shrink: 0;
+		    border-radius: 2px;
+		    border: 1px solid rgba(0,0,0,.14);
+		    text-align: center;
+		    box-shadow: inset 0 2px 0 0 rgba(0,0,0,.02);
+		    margin-right: 8px;
+		}
+		.cart-page-product-header__product {
+		    color: rgba(0,0,0,.8);
+		    width: 46.27949%;
+		}
+		.cart-page-product-header__unit-price {
+		    width: 15.88022%;
+		    text-align: center;
+		}
+		.cart-page-product-header__quantity {
+		    width: 15.4265%;
+		    text-align: center;
+		}
+		.cart-page-product-header__total-price {
+		    width: 10.43557%;
+		    text-align: center;
+		}
+		.cart-page-product-header__action {
+		    width: 12.70417%;
+		    text-align: center;
+		}
+		.cart-page-shop-section {
+		    box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+		    border-radius: .2rem;
+		    overflow: hidden;
+		    background: #fff;
+		    margin-bottom: 15px;
+		    overflow: visible;
+		}
+		.cart-page-shop-header, .cart-page-shop-header__center-wrapper {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		}
+		.cart-page-shop-header {
+		    height: 6rem;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    border-bottom: 1px solid rgba(0,0,0,.09);
+		    padding: 0 20px;
+		}
+		.cart-page-shop-header__center-wrapper {
+		    -webkit-box-flex: 1;
+		    -webkit-flex: 1;
+		    -moz-box-flex: 1;
+		    -ms-flex: 1;
+		    flex: 1;
+		}
+		.cart-page-shop-header, .cart-page-shop-header__center-wrapper {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		}
+		.cart-item__cell-checkbox {
+		    padding: 0 12px 0 20px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: reverse;
+		    -webkit-flex-direction: row-reverse;
+		    -moz-box-orient: horizontal;
+		    -moz-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		    min-width: 58px;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		.cart-page-shop-header__chat, .cart-page-shop-header__checkbox-wrapper {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		}
+		.cart-page-shop-header__checkbox-wrapper {
+		    width: 58px!important;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: reverse;
+		    -webkit-flex-direction: row-reverse;
+		    -moz-box-orient: horizontal;
+		    -moz-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    padding-right: 18px;
+		}
+		.cart-page__content {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: vertical;
+		    -webkit-box-direction: normal;
+		    -webkit-flex-direction: column;
+		    -moz-box-orient: vertical;
+		    -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		    color: rgba(0,0,0,.8);
+		}
+		.stardust-checkbox {
+		    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+		    font-weight: 300;
+		    font-size: 12px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    cursor: default;
+		    position: relative;
+		    color: rgba(0,0,0,.54);
+		    max-width: 400px;
+		}
+		input[type=checkbox], input[type=radio] {
+		    box-sizing: border-box;
+		    padding: 0;
+		}
+		.stardust-checkbox__input {
+		    opacity: 0;
+		    top: 0;
+		    left: 0;
+		    position: absolute;
+		}
+		input {
+		    line-height: normal;
+		}
+		button, input, optgroup, select, textarea {
+		    color: inherit;
+		    font: inherit;
+		    margin: 0;
+		}
+		input[type="checkbox" i] {
+		    -webkit-appearance: checkbox;
+		    box-sizing: border-box;
+		}
+		input[type="radio" i], input[type="checkbox" i] {
+		    background-color: initial;
+		    cursor: default;
+		    margin: 3px 0.5ex;
+		    padding: initial;
+		    border: initial;
+		}
+		.stardust-checkbox--checked>.stardust-checkbox__box {
+		    background: #ff5722;
+		    border-color: #ff5722;
+		}
+		.stardust-checkbox__box {
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    position: relative;
+		    width: 16px;
+		    height: 16px;
+		    -webkit-flex-shrink: 0;
+		    -ms-flex-negative: 0;
+		    flex-shrink: 0;
+		    border-radius: 2px;
+		    border: 1px solid rgba(0,0,0,.14);
+		    text-align: center;
+		    box-shadow: inset 0 2px 0 0 rgba(0,0,0,.02);
+		    margin-right: 8px;
+		}
+		.stardust-checkbox {
+		    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+		    font-weight: 300;
+		    font-size: 12px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    cursor: default;
+		    position: relative;
+		    color: rgba(0,0,0,.54);
+		    max-width: 400px;
+		}
+		.cart-page-shop-header__shop-name {
+		    text-decoration: none;
+		    color: rgba(0,0,0,.8);
+		    font-weight: 500;
+		    min-width: 50px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		}
+		.cart-page-shop-header__chat {
+		    margin-left: 5px;
+		    background: none;
+		    border: none;
+		    padding: 0;
+		}
+		.cart-page-shop-header__chat-icon {
+		    color: #00bfa5;
+		    width: 2.2rem;
+		    height: 1.6rem;
+		    cursor: pointer;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+		svg:not(:root) {
+		    overflow: hidden;
+		}
+		.cart-page-shop-section__items {
+		    position: relative;
+		    padding: 15px 20px;
+		}
+		.cart-page-shop-section__items>.cart-item {
+		    border: none;
+		}
+		.cart-item {
+		    text-decoration: none;
+		    color: rgba(0,0,0,.8);
+		    display: block;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    display: flex;
+		    border-top: 1px solid rgba(0,0,0,.09);
+		    padding-bottom: 15px;
+		    margin-top: 15px;
+		    position: relative;
+		}
+		.cart-item__cell-checkbox {
+		    padding: 0 12px 0 20px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: horizontal;
+		    -webkit-box-direction: reverse;
+		    -webkit-flex-direction: row-reverse;
+		    -moz-box-orient: horizontal;
+		    -moz-box-direction: reverse;
+		    -ms-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		    min-width: 58px;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		.stardust-checkbox {
+		    font-family: -apple-system,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+		    font-weight: 300;
+		    font-size: 12px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    cursor: default;
+		    position: relative;
+		    color: rgba(0,0,0,.54);
+		    max-width: 400px;
+		}
+		input[type=checkbox], input[type=radio] {
+		    box-sizing: border-box;
+		    padding: 0;
+		}
+		.stardust-checkbox--checked>.stardust-checkbox__box {
+		    background: #ff5722;
+		    border-color: #ff5722;
+		}
+		.cart-item__cell-overview {
+		    width: 29.03811%;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		}
+		.cart-item-overview__thumbnail {
+		    background-position: 50%;
+		    background-size: contain;
+		    background-repeat: no-repeat;
+		    width: 8rem;
+		    height: 8rem;
+		}
+		.cart-item-overview__product-name-wrapper {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-orient: vertical;
+		    -webkit-box-direction: normal;
+		    -webkit-flex-direction: column;
+		    -moz-box-orient: vertical;
+		    -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		    padding: .5rem 2rem 0 1rem;
+		    font-size: 1.4rem;
+		    line-height: 1.6rem;
+		    width: 24.35rem;
+		}
+		.cart-item-overview__link, .cart-item-overview__name {
+		    text-decoration: none;
+		    color: rgba(0,0,0,.8);
+		}
+		.cart-item-overview__name {
+		    display: block;
+		    margin-bottom: .5rem;
+		    line-height: 1.6rem;
+		    max-height: 3.2rem;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    word-break: break-word;
+		    display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 2;
+		}
+		.cart-item__cell-unit-price, .cart-item__cell-variation {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		}
+		.cart-item__cell-variation {
+		    width: 17.24138%;
+		}
+		.cart-item__cell-quantity, .cart-item__cell-unit-price {
+		    -webkit-box-orient: vertical;
+		    -webkit-box-direction: normal;
+		    -webkit-flex-direction: column;
+		    -moz-box-orient: vertical;
+		    -moz-box-direction: normal;
+		    -ms-flex-direction: column;
+		    flex-direction: column;
+		}
+		.cart-item__cell-unit-price {
+		    width: 15.88022%;
+		}
+		.cart-item__cell-unit-price, .cart-item__cell-variation {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		}
+		.cart-item__unit-price:last-child {
+		    margin: 0;
+		}
+		.cart-item__cell-quantity {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    width: 15.4265%;
+		}
+		.shopee-input-quantity {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		}
+		.shopee-input-quantity>.shopee-button-outline:first-child {
+		    border-top-right-radius: 0;
+		    border-bottom-right-radius: 0;
+		}
+		.cart-item .shopee-input-quantity>.shopee-button-outline-mid {
+		    width: 4rem;
+		}
+		.cart-item .shopee-input-quantity>.shopee-button-outline {
+		    width: 3rem;
+		    height: 3rem;
+		}
+		.shopee-input-quantity .shopee-button-outline-mid {
+		    width: 5rem;
+		    height: 3.2rem;
+		    border-left: none;
+		    border-right: none;
+		    font-size: 1.6rem;
+		    font-weight: 400;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    text-align: center;
+		    cursor: text;
+		    border-radius: 0;
+		}
+		.shopee-button-outline {
+		    outline: none;
+		    cursor: pointer;
+		    border: none;
+		    font-size: 1.4rem;
+		    font-weight: 300;
+		    line-height: 1;
+		    letter-spacing: 0;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    -webkit-transition: background-color .1s cubic-bezier(.4,0,.6,1);
+		    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+		    border: 1px solid rgba(0,0,0,.09);
+		    border-radius: 2px;
+		    background: transparent;
+		    color: rgba(0,0,0,.8);
+		}
+		.cart-item .shopee-input-quantity>.shopee-button-outline {
+		    width: 3rem;
+		    height: 3rem;
+		}
+		.shopee-input-quantity>.shopee-button-outline:last-child {
+		    border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+		}
+		.shopee-input-quantity .shopee-button-outline {
+		    width: 3.2rem;
+		    height: 3.2rem;
+		}
+		.shopee-button-outline {
+		    outline: none;
+		    cursor: pointer;
+		    border: none;
+		    font-size: 1.4rem;
+		    font-weight: 300;
+		    line-height: 1;
+		    letter-spacing: 0;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    -webkit-transition: background-color .1s cubic-bezier(.4,0,.6,1);
+		    transition: background-color .1s cubic-bezier(.4,0,.6,1);
+		    border: 1px solid rgba(0,0,0,.09);
+		    border-radius: 2px;
+		    background: transparent;
+		    color: rgba(0,0,0,.8);
+		}
+		.cart-item__cell-total-price {
+		    width: 10.43557%;
+		    text-align: right;
+		    color: #ff5722;
+		}
+		.cart-item__cell-actions {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    width: 12.70417%;
+		    text-transform: capitalize;
+		}
+		.cart-item__cell-actions {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -webkit-box-align: center;
+		    -webkit-align-items: center;
+		    -moz-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    width: 12.70417%;
+		    text-transform: capitalize;
+		}
+		.cart-shipping__message {
+		    margin-left: 1.5rem;
+		}
+		.cart-shipping .icon-free-shipping-line {
+		    color: #00bfa5;
+		    stroke: currentColor;
+		    fill: currentColor;
+		    width: 2rem;
+		    height: 1.5rem;
+		}
+
+	</style>
 </head>
-
 <body>
-	<div class="banner-top container-fluid" id="home">
-		<!-- header -->
-		<header>
-			<div class="row">
-				<div class="col-md-3 top-info text-left mt-lg-4">
-					<h6>Need Help</h6>
-					<ul>
-						<li>
-							<i class="fas fa-phone"></i> Call</li>
-						<li class="number-phone mt-3">12345678099</li>
-					</ul>
-				</div>
-				<div class="col-md-6 logo-w3layouts text-center">
-					<h1 class="logo-w3layouts">
-						<a class="navbar-brand" href="index.html">
-							Goggles </a>
-					</h1>
-				</div>
-
-				<div class="col-md-3 top-info-cart text-right mt-lg-4">
-					<ul class="cart-inner-info">
-						<li class="button-log">
-							<a class="btn-open" href="#">
-								<span class="fa fa-user" aria-hidden="true"></span>
-							</a>
-						</li>
-						<li class="galssescart galssescart2 cart cart box_1">
-							<form action="#" method="post" class="last">
-								<input type="hidden" name="cmd" value="_cart">
-								<input type="hidden" name="display" value="1">
-								<button class="top_googles_cart" type="submit" name="submit" value="">
-									My Cart
-									<i class="fas fa-cart-arrow-down"></i>
-								</button>
-							</form>
-						</li>
-					</ul>
-					<!---->
-					<div class="overlay-login text-left">
-						<button type="button" class="overlay-close1">
-							<i class="fa fa-times" aria-hidden="true"></i>
-						</button>
-						<div class="wrap">
-							<h5 class="text-center mb-4">Login Now</h5>
-							<div class="login p-5 bg-dark mx-auto mw-100">
-								<form action="#" method="post">
-									<div class="form-group">
-										<label class="mb-2">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
-										<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-									</div>
-									<div class="form-group">
-										<label class="mb-2">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
-									</div>
-									<div class="form-check mb-2">
-										<input type="checkbox" class="form-check-input" id="exampleCheck1">
-										<label class="form-check-label" for="exampleCheck1">Check me out</label>
-									</div>
-									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
-
-								</form>
-							</div>
-							<!---->
-						</div>
-					</div>
-					<!---->
-				</div>
-			</div>
-			<div class="search">
-				<div class="mobile-nav-button">
-					<button id="trigger-overlay" type="button">
-						<i class="fas fa-search"></i>
-					</button>
-				</div>
-				<!-- open/close -->
-				<div class="overlay overlay-door">
-					<button type="button" class="overlay-close">
-						<i class="fa fa-times" aria-hidden="true"></i>
-					</button>
-					<form action="#" method="post" class="d-flex">
-						<input class="form-control" type="search" placeholder="Search here..." required="">
-						<button type="submit" class="btn btn-primary submit">
-							<i class="fas fa-search"></i>
-						</button>
-					</form>
-
-				</div>
-				<!-- open/close -->
-			</div>
-			<label class="top-log mx-auto"></label>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
-
-				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				    aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon">
-						
-					</span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav nav-mega mx-auto">
-						<li class="nav-item">
-							<a class="nav-link ml-lg-0" href="index.html">Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Features
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										<div class="col-md-4 media-list span4 text-left">
-											<h5 class="tittle-w3layouts-sub"> Tittle goes here </h5>
-											<ul>
-												<li class="media-mini mt-3">
-													<a href="shop.html">Designer Glasses</a>
-												</li>
-												<li class="">
-													<a href="shop.html"> Ray-Ban</a>
-												</li>
-												<li>
-													<a href="shop.html">Prescription Glasses</a>
-												</li>
-												<li class="mt-3">
-													<h5>View more pages</h5>
-												</li>
-												<li class="mt-2">
-													<a href="about.html">About</a>
-												</li>
-												<li>
-													<a href="customer.html">Customers</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-											<h5 class="tittle-w3layouts-sub"> Tittle goes here </h5>
-											<div class="media-mini mt-3">
-												<a href="shop.html">
-													<img src="images/g2.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-											<h5 class="tittle-w3layouts-sub">Tittle goes here </h5>
-											<div class="media-mini mt-3">
-												<a href="shop.html">
-													<img src="images/g3.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-
-										</div>
-									</div>
-									<hr>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true"
-							    aria-expanded="false">
-								Shop
-							</a>
-							<ul class="dropdown-menu mega-menu ">
-								<li>
-									<div class="row">
-										<div class="col-md-4 media-list span4 text-left">
-											<h5 class="tittle-w3layouts-sub"> Tittle goes here </h5>
-											<ul>
-												<li class="media-mini mt-3">
-													<a href="shop.html">Designer Glasses</a>
-												</li>
-												<li class="">
-													<a href="shop.html"> Ray-Ban</a>
-												</li>
-												<li>
-													<a href="shop.html">Prescription Glasses</a>
-												</li>
-												<li>
-													<a href="shop.html">Rx Sunglasses</a>
-												</li>
-												<li>
-													<a href="shop.html">Contact Lenses</a>
-												</li>
-												<li>
-													<a href="shop.html">Multifocal Glasses</a>
-												</li>
-												<li>
-													<a href="shop.html">Kids Glasses</a>
-												</li>
-												<li>
-													<a href="shop.html">Lightweight Glasses</a>
-												</li>
-												<li>
-													<a href="shop.html">Sports Glasses</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-											<h5 class="tittle-w3layouts-sub"> Tittle goes here </h5>
-											<ul>
-												<li class="media-mini mt-3">
-
-													<a href="shop.html">Brooks Brothers</a>
-												</li>
-												<li>
-													<a href="shop.html">Persol</a>
-												</li>
-												<li>
-													<a href="shop.html">Polo Ralph Lauren</a>
-												</li>
-												<li>
-													<a href="shop.html">Prada</a>
-												</li>
-												<li>
-													<a href="shop.html">Ray-Ban Jr</a>
-												</li>
-												<li>
-													<a href="shop.html">Sferoflex</a>
-												</li>
-											</ul>
-											<ul class="sub-in text-left">
-
-												<li>
-													<a href="shop.html">Polo Ralph Lauren</a>
-												</li>
-												<li>
-													<a href="shop.html">Prada</a>
-												</li>
-												<li>
-													<a href="shop.html">Ray-Ban Jr</a>
-												</li>
-											</ul>
-
-										</div>
-										<div class="col-md-4 media-list span4 text-left">
-
-											<h5 class="tittle-w3layouts-sub-nav">Tittle goes here </h5>
-											<div class="media-mini mt-3">
-												<a href="shop.html">
-													<img src="images/g1.jpg" class="img-fluid" alt="">
-												</a>
-											</div>
-
-										</div>
-									</div>
-									<hr>
-								</li>
-							</ul>
-
-
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-
-					</ul>
-
-				</div>
-			</nav>
-		</header>
-		<!-- banner -->
-		<div class="banner_inner">
-			<div class="services-breadcrumb">
-				<div class="inner_breadcrumb">
-
-					<ul class="short">
-						<li>
-							<a href="index.html">Home</a>
-							<i>|</i>
-						</li>
-						<li>Checkout </li>
-					</ul>
-				</div>
-			</div>
-
-		</div>
-		<!--//banner -->
+	<div class="container" style="width: 1200px; display: block;margin: auto;">
+	   <div role="main" class="cart-page__content cart-page__content--opc" style="margin-bottom: 195px;">
+	        
+	        <div class="cart-page-product-header">
+	            <div class="cart-item__cell-checkbox">
+	                <label class="stardust-checkbox stardust-checkbox--checked">
+	                    <input class="stardust-checkbox__input" type="checkbox">
+	                    <div class="stardust-checkbox__box"></div>
+	                </label>
+	            </div>
+	            <div class="cart-page-product-header__product">Product</div>
+	            <div class="cart-page-product-header__unit-price">Price</div>
+	            <div class="cart-page-product-header__quantity">Quantity</div>
+	            <div class="cart-page-product-header__total-price">Price</div>
+	            <div class="cart-page-product-header__action">Remove</div>
+	        </div>
+	        <div>
+	            <div class="cart-page-shop-section">
+	                <div class="cart-page-shop-header">
+	                    <div class="cart-page-shop-header__center-wrapper">
+	                        
+	                        <a class="cart-page-shop-header__shop-name" href="/behattieu1911">
+	                            <svg width="17" height="16" viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+	                                <path d="M1.95 6.6c.156.804.7 1.867 1.357 1.867.654 0 1.43 0 1.43-.933h.932s0 .933 1.155.933c1.176 0 1.15-.933 1.15-.933h.984s-.027.933 1.148.933c1.157 0 1.15-.933 1.15-.933h.94s0 .933 1.43.933c1.368 0 1.356-1.867 1.356-1.867H1.95zm11.49-4.666H3.493L2.248 5.667h12.437L13.44 1.934zM2.853 14.066h11.22l-.01-4.782c-.148.02-.295.042-.465.042-.7 0-1.436-.324-1.866-.86-.376.53-.88.86-1.622.86-.667 0-1.255-.417-1.64-.86-.39.443-.976.86-1.643.86-.74 0-1.246-.33-1.623-.86-.43.536-1.195.86-1.895.86-.152 0-.297-.02-.436-.05l-.018 4.79zM14.996 12.2v.933L14.984 15H1.94l-.002-1.867V8.84C1.355 8.306 1.003 7.456 1 6.6L2.87 1h11.193l1.866 5.6c0 .943-.225 1.876-.934 2.39v3.21z" stroke-width=".3" stroke="#333" fill="#333" fill-rule="evenodd"></path>
+	                            </svg><span style="margin-left: 5px;">behattieu1911</span>
+	                        </a>
+	                        <button class="cart-page-shop-header__chat">
+	                            <svg class="shopee-svg-icon cart-page-shop-header__chat-icon " height="16" viewBox="0 0 22 16" width="22">
+	                                <g fill-rule="evenodd" stroke="none" stroke-width="1">
+	                                    <path d="m20.4457887 12.1418577c.7876778-1.0820669 1.2491266-2.39517639 1.2491266-3.81076088 0-3.70250491-3.156772-6.70397818-7.0508475-6.70397818-.0693752 0-.1385164.00095266-.2074099.00284495.5404574.50025601 1.0147388 1.06413368 1.4092798 1.67881242 2.4766811.50241938 4.334147 2.59466525 4.334147 5.09940288 0 1.42273066-.5992965 2.71237411-1.5709606 3.65316531-.038511.0495389-.1182188.17233-.1182188.3400495 0 .0295752.0286166.606356.0286166.606356s.0628359.4223645-.402977.2339696l-.3693587-.1500883s-.282324-.1280652-.7138007.0348215c-.7090281.3180796-1.5013162.4959316-2.3372932.4959316-.0124026 0-.0247956-.0000391-.0371789-.0001173-.4735214.4699114-1.0031122.8888889-1.5786318 1.2473477.5029786.1082913 1.0263607.1654605 1.5637862.1654605.540439 0 1.0666765-.0578121 1.572245-.1672869-.0007126.0013151-.0010723.0024172-.0010723.0033021 1.2460849-.3092111 1.9222453-.012738 1.9222453-.012738l.9795545.4181041c1.2353963.5249174 1.0872542-.6061418 1.0872542-.6061418s-.0526532-1.69977-.0526532-1.69977c0-.3488224.2251239-.7223577.2941474-.8286869z"></path>
+	                                    <path d="m6.32146433 15.2776955c.00082231.0015175.00123728.0027891.00123728.0038102-1.43779019-.3567821-2.21797536-.0146977-2.21797536-.0146977l-1.13025518.4824278c-1.42545721.6056739-1.25452408-.6993944-1.25452408-.6993944s.06075368-1.9612731.06075368-1.9612731c0-.4024874-.25975827-.8334897-.33940083-.9561771-.90885893-1.2485387-1.44129984-2.76366504-1.44129984-4.39703176 0-4.27212105 3.64242915-7.73535944 8.13559322-7.73535944 4.49316408 0 8.13559318 3.46323839 8.13559318 7.73535944 0 4.27212106-3.6424291 7.73535946-8.13559318 7.73535946-.62358341 0-1.2307806-.0667063-1.81412889-.1930234zm-.988131-6.03325648c.73637967 0 1.33333334-.59695367 1.33333334-1.33333333 0-.73637967-.59695367-1.33333334-1.33333334-1.33333334-.73637966 0-1.33333333.59695367-1.33333333 1.33333334 0 .73637966.59695367 1.33333333 1.33333333 1.33333333zm5.55555557 0c .7363797 0 1.3333333-.59695367 1.3333333-1.33333333 0-.73637967-.5969536-1.33333334-1.3333333-1.33333334s-1.33333334.59695367-1.33333334 1.33333334c0 .73637966.59695364 1.33333333 1.33333334 1.33333333z"></path>
+	                                </g>
+	                            </svg>
+	                        </button>
+	                        <div class="cart-page-shop-header__gap"></div>
+	                    </div>
+	                </div>
+	                <div class="cart-page-shop-section__items">
+	                    <div class="cart-item">
+	                        <div class="cart-item__cell-checkbox">
+	                            <label class="stardust-checkbox stardust-checkbox--checked">
+	                                <input class="stardust-checkbox__input" type="checkbox">
+	                                <div class="stardust-checkbox__box"></div>
+	                            </label>
+	                        </div>
+	                        <div class="cart-item__cell-overview">
+	                            <a class="cart-item-overview__thumbnail-wrapper" title="1kg bánh gạo tobokki" href="/1kg-bánh-gạo-tobokki-i.18273388.931548805">
+	                                <div class="cart-item-overview__thumbnail" alt="cart_thumbnail" style="background-image: url(&quot;https://cf.shopee.vn/file/27200e0271bef3cdcd094ff922cc08a4_tn&quot;);"></div>
+	                            </a>
+	                            <div class="cart-item-overview__product-name-wrapper"><a class="cart-item-overview__name" title="1kg bánh gạo tobokki" href="/1kg-bánh-gạo-tobokki-i.18273388.931548805">1kg bánh gạo tobokki</a>
+	                                <div class="cart-item-overview__message"></div>
+	                            </div>
+	                        </div>
+	                        <div class="cart-item__cell-variation"></div>
+	                        <div class="cart-item__cell-unit-price">
+	                            <div><span class="cart-item__unit-price cart-item__unit-price--after">₫65.000</span>
+	                            </div>
+	                        </div>
+	                        <div class="cart-item__cell-quantity">
+	                            <div class="shopee-input-quantity">
+	                                <button class="shopee-button-outline">
+	                                    <svg class="shopee-svg-icon " enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0">
+	                                        <polygon points="4.5 4.5 3.5 4.5 0 4.5 0 5.5 3.5 5.5 4.5 5.5 10 5.5 10 4.5"></polygon>
+	                                    </svg>
+	                                </button>
+	                                <input class="shopee-button-outline shopee-button-outline-mid" type="text" value="1">
+	                                <button class="shopee-button-outline">
+	                                    <svg class="shopee-svg-icon icon-plus-sign" enable-background="new 0 0 10 10" viewBox="0 0 10 10" x="0" y="0">
+	                                        <polygon points="10 4.5 5.5 4.5 5.5 0 4.5 0 4.5 4.5 0 4.5 0 5.5 4.5 5.5 4.5 10 5.5 10 5.5 5.5 10 5.5"></polygon>
+	                                    </svg>
+	                                </button>
+	                            </div>
+	                        </div>
+	                        <div class="cart-item__cell-total-price">₫65.000</div>
+	                        <div class="cart-item__cell-actions">
+	                            <button class="cart-item__action">Xóa</button>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="cart-shipping">
+	                    <svg class="shopee-svg-icon icon-free-shipping-line" enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0">
+	                        <g>
+	                            <line fill="none" stroke-linejoin="round" stroke-miterlimit="10" x1="8.6" x2="4.2" y1="9.8" y2="9.8"></line>
+	                            <circle cx="3" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+	                            <circle cx="10" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+	                            <line fill="none" stroke-miterlimit="10" x1="10.5" x2="14.4" y1="7.3" y2="7.3"></line>
+	                            <polyline fill="none" points="1.5 9.8 .5 9.8 .5 1.8 10 1.8 10 9.1" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+	                            <polyline fill="none" points="9.9 3.8 14 3.8 14.5 10.2 11.9 10.2" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+	                        </g>
+	                    </svg>
+	                    <div class="cart-shipping__message">Miễn Phí Vận Chuyển cho đơn hàng từ ₫200.000 (giảm tối đa ₫40.000)</div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="cart-page__gap"></div>
+	        <div class="inactive-cart">
+	            
+	            <button class="inactive-cart__clear clear-btn-style">Bỏ sản phẩm không hoạt động</button>
+	        </div>
+	    </div>
+	   
 	</div>
-	<!--// header_top -->
-	<!--checkout-->
-	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
-		<div class="container">
-			<div class="inner-sec-shop px-lg-4 px-3">
-				<h3 class="tittle-w3layouts my-lg-4 mt-3">Checkout </h3>
-				<div class="checkout-right">
-					<h4>Your shopping cart contains:
-						<span>3 Products</span>
-					</h4>
-					<table class="timetable_sub">
-						<thead>
-							<tr>
-								<th>SL No.</th>
-								<th>Product</th>
-								<th>Quantity</th>
-								<th>Product Name</th>
-
-								<th>Price</th>
-								<th>Remove</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="rem1">
-								<td class="invert">1</td>
-								<td class="invert-image">
-									<a href="single.html">
-										<img src="images/s1.jpg" alt=" " class="img-responsive">
-									</a>
-								</td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value">
-												<span>1</span>
-											</div>
-											<div class="entry value-plus active">&nbsp;</div>
-										</div>
-									</div>
-								</td>
-								<td class="invert">Irayz Butterfly </td>
-
-								<td class="invert">$281.00</td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close1"> </div>
-									</div>
-
-								</td>
-							</tr>
-							<tr class="rem2">
-								<td class="invert">2</td>
-								<td class="invert-image">
-									<a href="single.html">
-										<img src="images/s5.jpg" alt=" " class="img-responsive">
-									</a>
-								</td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value">
-												<span>1</span>
-											</div>
-											<div class="entry value-plus active">&nbsp;</div>
-										</div>
-									</div>
-								</td>
-								<td class="invert">Fastrack Aviator </td>
-
-								<td class="invert">$325.00</td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close2"> </div>
-									</div>
-
-								</td>
-							</tr>
-							<tr class="rem3">
-								<td class="invert">3</td>
-								<td class="invert-image">
-									<a href="single.html">
-										<img src="images/s2.jpg" alt=" " class="img-responsive">
-									</a>
-								</td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value">
-												<span>1</span>
-											</div>
-											<div class="entry value-plus active">&nbsp;</div>
-										</div>
-									</div>
-								</td>
-								<td class="invert">Opium (Grey)</td>
-
-								<td class="invert">$325.00</td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close3"> </div>
-									</div>
-
-								</td>
-							</tr>
-
-						</tbody>
-					</table>
-				</div>
-				<div class="checkout-left row">
-					<div class="col-md-4 checkout-left-basket">
-						<h4>Continue to basket</h4>
-						<ul>
-							<li>Product1
-								<i>-</i>
-								<span>$281.00 </span>
-							</li>
-							<li>Product2
-								<i>-</i>
-								<span>$325.00 </span>
-							</li>
-							<li>Product3
-								<i>-</i>
-								<span>$325.00 </span>
-							</li>
-							<li>Total Service Charges
-								<i>-</i>
-								<span>$55.00</span>
-							</li>
-							<li>Total
-								<i>-</i>
-								<span>$986.00</span>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-8 address_form">
-						<h4>Add a new Details</h4>
-						<form action="payment.html" method="post" class="creditly-card-form agileinfo_form">
-							<section class="creditly-wrapper wrapper">
-								<div class="information-wrapper">
-									<div class="first-row form-group">
-										<div class="controls">
-											<label class="control-label">Full name: </label>
-											<input class="billing-address-name form-control" type="text" name="name" placeholder="Full name">
-										</div>
-										<div class="card_number_grids">
-											<div class="card_number_grid_left">
-												<div class="controls">
-													<label class="control-label">Mobile number:</label>
-													<input class="form-control" type="text" placeholder="Mobile number">
-												</div>
-											</div>
-											<div class="card_number_grid_right">
-												<div class="controls">
-													<label class="control-label">Landmark: </label>
-													<input class="form-control" type="text" placeholder="Landmark">
-												</div>
-											</div>
-											<div class="clear"> </div>
-										</div>
-										<div class="controls">
-											<label class="control-label">Town/City: </label>
-											<input class="form-control" type="text" placeholder="Town/City">
-										</div>
-										<div class="controls">
-											<label class="control-label">Address type: </label>
-											<select class="form-control option-w3ls">
-												<option>Office</option>
-												<option>Home</option>
-												<option>Commercial</option>
-
-											</select>
-										</div>
-									</div>
-									<button class="submit check_out">Delivery to this Address</button>
-								</div>
-							</section>
-						</form>
-						<div class="checkout-right-basket">
-							<a href="payment.html">Make a Payment </a>
-						</div>
-					</div>
-
-					<div class="clearfix"> </div>
-
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-	<!--//checkout-->
-	<!--footer -->
-	<footer class="py-lg-5 py-3">
-		<div class="container-fluid px-lg-5 px-3">
-			<div class="row footer-top-w3layouts">
-				<div class="col-lg-3 footer-grid-w3ls">
-					<div class="footer-title">
-						<h3>About Us</h3>
-					</div>
-					<div class="footer-text">
-						<p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at
-							tellus. Nulla porttitor accumsana tincidunt.</p>
-						<ul class="footer-social text-left mt-lg-4 mt-3">
-
-							<li class="mx-2">
-								<a href="#">
-									<span class="fab fa-facebook-f"></span>
-								</a>
-							</li>
-							<li class="mx-2">
-								<a href="#">
-									<span class="fab fa-twitter"></span>
-								</a>
-							</li>
-							<li class="mx-2">
-								<a href="#">
-									<span class="fab fa-google-plus-g"></span>
-								</a>
-							</li>
-							<li class="mx-2">
-								<a href="#">
-									<span class="fab fa-linkedin-in"></span>
-								</a>
-							</li>
-							<li class="mx-2">
-								<a href="#">
-									<span class="fas fa-rss"></span>
-								</a>
-							</li>
-							<li class="mx-2">
-								<a href="#">
-									<span class="fab fa-vk"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 footer-grid-w3ls">
-					<div class="footer-title">
-						<h3>Get in touch</h3>
-					</div>
-					<div class="contact-info">
-						<h4>Location :</h4>
-						<p>0926k 4th block building, king Avenue, New York City.</p>
-						<div class="phone">
-							<h4>Contact :</h4>
-							<p>Phone : +121 098 8907 9987</p>
-							<p>Email :
-								<a href="mailto:info@example.com">info@example.com</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 footer-grid-w3ls">
-					<div class="footer-title">
-						<h3>Quick Links</h3>
-					</div>
-					<ul class="links">
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="404.html">Error</a>
-						</li>
-						<li>
-							<a href="shop.html">Shop</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 footer-grid-w3ls">
-					<div class="footer-title">
-						<h3>Sign up for your offers</h3>
-					</div>
-					<div class="footer-text">
-						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
-						<form action="#" method="post">
-							<input class="form-control" type="email" name="Email" placeholder="Enter your email..." required="">
-							<button class="btn1">
-								<i class="far fa-envelope" aria-hidden="true"></i>
-							</button>
-							<div class="clearfix"> </div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="copyright-w3layouts mt-4">
-				<p class="copy-right text-center ">&copy; 2018 Goggles. All Rights Reserved | Design by
-					<a href="http://w3layouts.com/"> W3layouts </a>
-				</p>
-			</div>
-		</div>
-	</footer>
-	<!-- //footer -->
-	<!--jQuery-->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- newsletter modal -->
-	<!--search jQuery-->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/classie-search.js"></script>
-	<script src="js/demo1-search.js"></script>
-	<!--//search jQuery-->
-	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
-	<script>
-		googles.render();
-
-		googles.cart.on('googles_checkout', function (evt) {
-			var items, len, i;
-
-			if (this.subtotal() > 0) {
-				items = this.items();
-
-				for (i = 0, len = items.length; i < len; i++) {}
-			}
-		});
-	</script>
-	<!-- //cart-js -->
-	<script>
-		$(document).ready(function () {
-			$(".button-log a").click(function () {
-				$(".overlay-login").fadeToggle(200);
-				$(this).toggleClass('btn-open').toggleClass('btn-close');
-			});
-		});
-		$('.overlay-close1').on('click', function () {
-			$(".overlay-login").fadeToggle(200);
-			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
-			open = false;
-		});
-	</script>
-	<!-- carousel -->
-	<!-- easy-responsive-tabs -->
-	<script src="js/easy-responsive-tabs.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#horizontalTab').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion           
-				width: 'auto', //auto or any width like 600px
-				fit: true, // 100% fit in a container
-				closed: 'accordion', // Start closed if in accordion view
-				activate: function (event) { // Callback function if tab is switched
-					var $tab = $(this);
-					var $info = $('#tabInfo');
-					var $name = $('span', $info);
-					$name.text($tab.text());
-					$info.show();
-				}
-			});
-			$('#verticalTab').easyResponsiveTabs({
-				type: 'vertical',
-				width: 'auto',
-				fit: true
-			});
-		});
-	</script>
-	<!--quantity-->
-	<script>
-		$('.value-plus').on('click', function () {
-			var divUpd = $(this).parent().find('.value'),
-				newVal = parseInt(divUpd.text(), 10) + 1;
-			divUpd.text(newVal);
-		});
-
-		$('.value-minus').on('click', function () {
-			var divUpd = $(this).parent().find('.value'),
-				newVal = parseInt(divUpd.text(), 10) - 1;
-			if (newVal >= 1) divUpd.text(newVal);
-		});
-	</script>
-	<!--quantity-->
-	<!--close-->
-	<script>
-		$(document).ready(function (c) {
-			$('.close1').on('click', function (c) {
-				$('.rem1').fadeOut('slow', function (c) {
-					$('.rem1').remove();
-				});
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function (c) {
-			$('.close2').on('click', function (c) {
-				$('.rem2').fadeOut('slow', function (c) {
-					$('.rem2').remove();
-				});
-			});
-		});
-	</script>
-	<script>
-		$(document).ready(function (c) {
-			$('.close3').on('click', function (c) {
-				$('.rem3').fadeOut('slow', function (c) {
-					$('.rem3').remove();
-				});
-			});
-		});
-	</script>
-	<!--//close-->
-
-	<!-- dropdown nav -->
-	<script>
-		$(document).ready(function () {
-			$(".dropdown").hover(
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
-					$(this).toggleClass('open');
-				},
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
-					$(this).toggleClass('open');
-				}
-			);
-		});
-	</script>
-	<!-- //dropdown nav -->
-	<script src="js/move-top.js"></script>
-    <script src="js/easing.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 900);
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-            /*
-            						var defaults = {
-            							  containerID: 'toTop', // fading element id
-            							containerHoverID: 'toTopHover', // fading element hover id
-            							scrollSpeed: 1200,
-            							easingType: 'linear' 
-            						 };
-            						*/
-
-            $().UItoTop({
-                easingType: 'easeOutQuart'
-            });
-
-        });
-    </script>
-    <!--// end-smoth-scrolling -->
-
-
-	<script src="js/bootstrap.js"></script>
-	<!-- js file -->
 </body>
-
 </html>
